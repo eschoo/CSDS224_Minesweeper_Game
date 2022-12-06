@@ -1,0 +1,46 @@
+@import "../../styles/index.scss";
+
+.App{
+    background: #c2c2c2;
+    padding: 16px;
+    @include borders(white, #999);
+    position: absolute;
+    align-items: center;
+    top:0;
+    left: 0;
+}
+.difficulty{
+    margin-left: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.Header{
+    @include borders(#7b7b7b, white);
+    background: #c0c0c0;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Body {
+    @include borders(#7b7b7b, white);
+    margin-top: 16px;
+    display: grid;
+}
+
+.Face {
+    @include borders(white, #7b7b7b);
+    @include buttons;
+    width: 52px;
+    height: 52px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
